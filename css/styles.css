@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Numans&display=swap');
-* {
+* { 
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eecd97;
 }
 
 body {
     width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: 0 auto;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    background-color: #eecd97;
 }
 
 h2 {
@@ -50,7 +58,14 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
     padding: 20px 50px;
+}
+
+.nav1, .nav2, .nav3 {
+    flex: 1;
+    text-align: center;
 }
 
 .nav1 ul, .nav3 ul {
@@ -59,6 +74,14 @@ nav {
     align-items: center;
     list-style: none;
     padding: 0;
+}
+
+.nav1 ul {
+    justify-content: flex-start;
+}
+
+.nav3 ul {
+    justify-content: flex-end;
 }
 
 .nav1 a, .nav3 a {
@@ -129,18 +152,41 @@ header article p {
 }
 
 .puzzleNumero1 {
-    width: 300px;
+    width: 450px;
+    height: 350px;
+    padding: 40px;
     background-color: rgb(253, 236, 220);
 }
 
 .puzzleNumero2 {
-    width: 300px;
+    width: 450px;
+    height: 350px;
+    padding: 40px;
     background-color: rgb(250, 203, 160);
 }
 
 .puzzleNumero3 {
-    width: 300px;
+    width: 450px;
+    height: 350px;
+    padding: 40px;
     background-color: rgb(253, 236, 220);
+}
+
+.puzzleNumero1 div {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.puzzleNumero1 div p {
+    flex: 50%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.puzzleNumero1 div img {
+    flex: 50%;
+    max-width: 40px;
 }
 
 .seccion2 {
