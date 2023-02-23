@@ -145,7 +145,7 @@ header article p {
     background-color: white;
 }
 
-article.seccion1 > div:first-child {
+.seccion1 > div:first-child {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -227,6 +227,7 @@ article.seccion1 > div:first-child {
 .seccion2 div:nth-child(1) {
     width: 40%;
     min-width: 375px;
+    padding: 75px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,12 +240,13 @@ article.seccion1 > div:first-child {
     width: 300px;
     font-size: 29px;
     font-weight: 570;
+    margin-bottom: 25px;
 }
 
 .seccion2 div:nth-child(1) p {
     width: 300px;
     font-size: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .seccion2 div:nth-child(1) ul {
@@ -280,6 +282,7 @@ article.seccion1 > div:first-child {
 .seccion2 div:nth-child(2) {
     width: 60%;
     min-width: 500px;
+    padding: 75px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -299,6 +302,43 @@ article.seccion1 > div:first-child {
     height: auto;
 }
 
+.seccion2 div:nth-child(2) div h3 {
+    max-width: 350px;
+    margin: 40px 0 15px;
+    font-weight: 500;
+    color: rgb(4, 74, 99);
+}
+
 .seccion2 div:nth-child(2) div p {
     max-width: 350px;
+    font-size: 14px;
+    color: rgb(4, 74, 99);
+}
+
+.seccion3 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion3 > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+}
+
+.seccion3 > div:nth-child(3) div:first-child {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion3 > div:nth-child(3) div:first-child img {
+    max-width: 500px;
+}
+
+.seccion3 > div:nth-child(3) div:last-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
